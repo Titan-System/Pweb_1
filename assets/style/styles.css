@@ -91,18 +91,80 @@ h1,h2,h3,h4,h5,h6{
     
 }
 .art-paraf{
-      font-family: 'Rubik','sans-serif';
+    font-family: 'Rubik','sans-serif';
     font-size: 0.7rem;  
 }
 
 #ruben2{
     display: flex;
+    text-align: center;
+    background-color: #e7e7e7;
+    height: fit-content;
 }
 #leftbox2{
     width: 50%;
-    height: 20rem;
+    height: 14em;    
+    background: url('../img/cars/4005.jpg');
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #eda9a95c;
+    color: #ff2323;
 }
 #rightbox2{
-    width:50;
-    height: 20rem;
+    width:50%;
+    height: 14em;
+    background: url('../img/cars/4006.jpg');
+    background-blend-mode: overlay;    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #9e0a0a5a;
+    color: #fff;
 }
+.p-car{
+    font-family: 'Rubik','sans-serif';
+    font-size: 0.7rem;
+}
+
+.btn3 {
+    background: #fff;
+    border: none;
+    padding: 10px 20px;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 600;
+    width: 120px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transform: skew(-21deg);
+  }
+  
+ .btn3 span {
+    display: inline-block;
+    transform: skew(21deg);
+  }
+  
+.btn3::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 100%;
+    left: 0;
+    background: rgb(20, 20, 20);
+    opacity: 0;
+    z-index: -1;
+    transition: all 0.5s;
+  }
+  
+  .btn3:hover {
+    color: #fff;
+  }
+  
+  .btn3:hover::before {
+    left: 0;
+    right: 0;
+    opacity: 1;
+  }
