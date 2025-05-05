@@ -1,17 +1,19 @@
 body{
     margin: 0;
     padding: 0;
+    background-color: #fbfbfb;
 }
 #ruben{
-    width: 100%;
+    width: 80%;
     height: 25rem;
     background-color: #e7e7e7;
     display: flex;
-    padding: 0.5rem;
+    margin: 0 auto;
 }
 #leftbox{
     width: 50%;
     font-family: "Rubik",sans-serif;
+    padding: 0.5em;
 }
 #lb-title{
     font-family: "Roboto",sans-serif;
@@ -75,6 +77,8 @@ h1,h2,h3,h4,h5,h6{
     display: flex;
     background-color: #e7e7e7;
     padding-bottom: 2em;
+    width: 80%;
+    margin:0 auto;
 }
 .art{
     display: flex;
@@ -100,6 +104,8 @@ h1,h2,h3,h4,h5,h6{
     text-align: center;
     background-color: #e7e7e7;
     height: fit-content;
+    width: 80%;
+    margin: 0 auto;
 }
 #leftbox2{
     width: 50%;
@@ -135,7 +141,7 @@ h1,h2,h3,h4,h5,h6{
     display: inline-block;
     font-size: 15px;
     font-weight: 600;
-    width: 120px;
+    width: 10em;
     text-transform: uppercase;
     cursor: pointer;
     transform: skew(-21deg);
@@ -145,7 +151,8 @@ h1,h2,h3,h4,h5,h6{
     display: inline-block;
     transform: skew(21deg);
   }
-  
+
+
 .btn3::before {
     content: '';
     position: absolute;
