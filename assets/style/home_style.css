@@ -17,7 +17,7 @@ header, footer {
 }
 
 /* Carrusel */
-.carousel-container {
+.carrusel-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -27,7 +27,7 @@ header, footer {
   margin: 20px auto;
 }
 
-.carousel {
+.carrusel {
   position: relative;
   width: 90%;
   max-width: 1200px;
@@ -82,4 +82,10 @@ header, footer {
 
 .arrow:hover {
   background-color: rgba(0,0,0,0.8);
+}
+.slide {
+  display: none;
+}
+.slide.active {
+  display: block;
 }
