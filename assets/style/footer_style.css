@@ -1,0 +1,67 @@
+footer {
+    padding: 10px 0;
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #800202;
+}
+
+.left_f {
+    text-align: left;
+    margin-left: 2px;
+}
+
+.left_f img {
+    width: 25px;  
+    height: auto;
+    margin-right: 5px; 
+}
+
+.yt {
+    padding-bottom: 4px;
+}
+
+.center_f {
+    text-align: center;
+    
+}
+
+.center_f a  {
+    margin-right: 10px;
+    color: white;
+}
+.center_f p  {
+    margin-right: 10px;
+    color: rgb(255, 255, 255);
+}
+.right_f {
+    text-align: right;
+    margin-right: 30px;
+}
+
+.google_play {
+    width: 100px;
+    height: auto; 
+}
+
+.apple_store {
+    width: 90px; 
+    height: auto; 
+    padding-left: 10px;
+}
+
+.all{
+    
+    width: 100%; 
+    margin: 10 auto;
+
+}
+a {
+    text-decoration: none; 
+     
+}

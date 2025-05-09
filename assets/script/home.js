@@ -22,12 +22,12 @@ document.addEventListener("DOMContentLoaded", () => {
       showSlide(current);
     }
   
-    document.querySelector(".arrow_left").addEventListener("click", () => {
+    document.querySelector(".arrow.left").addEventListener("click", () => {
       prevSlide();
       resetInterval();
     });
   
-    document.querySelector(".arrow_right").addEventListener("click", () => {
+    document.querySelector(".arrow.right").addEventListener("click", () => {
       nextSlide();
       resetInterval();
     });

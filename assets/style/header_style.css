@@ -1,0 +1,237 @@
+.logo_h{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: fit-content; 
+    margin: 0 auto; 
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    width: fit-content;
+    }
+    .logo_h a {
+        display: inline-block;
+        text-decoration: none;
+    }
+    .logo_h  h1:hover {
+            
+       transform: scale(1.2);
+    
+    }
+    .logo_h  h1{
+      transition: all 0.3s;
+        
+    }
+   
+    a{
+    
+        color: white;
+        text-decoration: none;
+    }
+    
+    .sidebar {
+        width: 250px;
+        height: 100vh;
+        padding: 0%;
+        color: #fff;
+        box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    }
+    
+    .sidebar h3 {
+        padding: 10px;
+        text-transform: uppercase;
+        color: #800202;
+    }
+    
+    .menu_h {
+        list-style: none;
+        padding-left: 10;
+        justify-content: center;
+    }
+    
+    .menu_h li {
+        margin: 20px 0;
+        text-align:  center;
+    }
+    
+    .menu_h li a {
+        color: #fff;
+        display: inline-block; 
+        text-decoration:none;
+        font-size: 16px;
+        padding: 6px 12px;
+        transition: background-color 0.3s ease;
+        border-radius: 10px;
+    
+        
+    }
+    
+    .menu_h li a svg {
+        margin-right: 10px;
+    }
+    
+    .submenu {
+        margin-left: 20px;
+        list-style: none;
+    }
+    
+    
+    @media (max-width: 768px) {
+        .sidebar {
+            width: 200px;
+        }
+        .menu_h li a {
+            font-size: 14px;
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .sidebar {
+            width: 100px;
+        }
+        .menu_h li a {
+            font-size: 12px;
+        }
+        .menu_h li a svg {
+            display: none;
+        }
+    }
+    
+    .menu_h li a:hover {
+        background-color: #00000089;  
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);  
+        color: #fff;  
+    }
+    
+    
+    .menu_h li a svg:hover {
+        transform: scale(1.2);  
+        transition: transform 0.3s ease;
+    }
+    
+    .sidebar h3 {
+        padding: 10px;
+        text-transform: uppercase;
+        color: #ffffff;
+        background-color: #800202;
+        text-align: center;
+        font-size: 45px; /* ← prueba aumentando esto si aún se ve mal */
+    }
+    
+    
+    .header-top_h {
+        background-color: #800202;
+        color: white;
+        display: flex;
+        align-items: center;
+        padding: 10px 20px;
+        position: relative; 
+        width: 100%; 
+        top: 1; 
+        z-index: 1000; 
+        box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 16px;
+    }
+    
+    .header-top_h .logo_H h1 {
+        margin: 0;
+        display: flexbox;
+    }
+    
+    .header-top_h .main-nav ul {
+        list-style: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .header-top_h .main-nav ul li {
+        margin-left: 20px;
+    }
+    
+    .header-top_h .main-nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+    }
+    
+    
+    .ba_h{
+        display: flex;
+        text-align: center;
+        text-decoration: none;
+        justify-content: center;
+        padding-right: 60px;
+        margin-left: auto;
+        transition: background-color 0.3s ease;
+        padding-right: 25px;
+        padding-bottom: 15px;
+        border-radius: 15px;
+        font-size: 20px;
+        height: 100%;
+    }
+
+    .ba_h a {
+        color: white;
+        text-decoration: none;
+        padding: 10px 20px;
+        border-radius: 15px;
+        background-color: #800202;
+        font-size: 20px;
+        margin: 0;
+    }
+
+    .ba_h:hover{
+    
+        background-color: #480202;
+    }
+    .desplegable_h a {
+    
+    display : -webkit-inline-box;
+    
+    
+    }
+    
+    .sidebar {
+        position: fixed;  
+        top: 60px;  
+        left: 0;
+        width: 15%;  
+        height: 0;  
+        overflow: hidden;  
+        background-color: #800202;
+        transition: height 0.3s ease;  
+        z-index: 999;  
+    }
+    
+    
+    .sidebar.open {
+        height: 100vh;
+        padding-top: 30px;  
+    }
+    
+    
+    
+    .desplegable_h a {
+        cursor: pointer;
+        color: white;
+    }
+    
+    
+    .header-top_h {
+        position: relative;
+        z-index: 1000;
+    }
+    
+    .desplegable_h  a:hover {
+    
+        transform: scale(1.2);
+     
+     }
+     .desplegable_h  a {
+       transition: all 0.3s;
+     
+     }
