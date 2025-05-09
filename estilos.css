@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f8f8f8;
+}
+
+.productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 40px;
+}
+
+.producto {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.producto img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.producto h2 {
+    margin: 10px 0;
+}
+
+.producto .categoria {
+    color: #888;
+    font-size: 0.9em;
+}
+
+.precio {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.precio-descuento {
+    text-decoration: line-through;
+    color: red;
+    margin-right: 8px;
+}
+
+
+.especial {
+    border: 2px solid #f30707;
+}
+
+
+.cargar-mas {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.cargar-mas button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cargar-mas button:hover {
+    background-color: #555;
+}
