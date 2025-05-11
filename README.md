@@ -13,4 +13,4 @@
 
 ## Captura
 
-imagen de la web
+![preview](screenshot.jpg)
