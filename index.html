@@ -1,78 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/style/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:wght@300..900&display=swap" rel="stylesheet">
-    <title>Concesionaria MotorLand</title>
+    <title>Zurita Motors</title>
+    <link rel="stylesheet" href="assets\style\header_style.css">
+    <link rel="stylesheet" href="assets\style\home_style.css">
+    <link rel="stylesheet" href="assets\style\footer_style.css">
 </head>
 <body>
-    <div id="ruben">
-        <div id="leftbox">
-            <h2 id="lb-title">About MotorLand</h2>
-        <p class="lb-paraf">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-        <h4 id="lb-uptitle">We are a trusty name in car industry</h4>
-        <h3 id="lb-subtitle">Visited by a Million Car buyers every month</h3>
-        <p class="lb-paraf">Lorem ipsum dolor sit amet consectetur adipisicing elit.   
-            Veritatis voluptate facilis dignissimos cum culpa officiis eius fugit ratione fugiat repudiandae mollitia dolore labore quidem iusto dolor facere iure, voluptas ex?</p>
-        <span id="buttons">
-            <div id="btn1"><a href="#">OUR PARTNERS</a></div>
-            <div id="btn2"><a href="#">LEARN MORE</a></div></span>    
-        
+    <header class="header-top_h">
+        <div class="container">
+            <button class="desplegable_h" id="toggleSidebarBtn">☰</button> 
+            <a class="logo_h" href="#">
+                <svg class="">
+                    <use href="./assets/icons/cars.svg#car-logo"></use>
+                </svg>
+                <h1>Zurita <span>Motors</span></h1>
+            </a>
         </div>
-        <div id="rightbox">
-            <div id="img">
-                <img src="assets/img/cars/car.png" alt="">
-            </div>
-            
-        </div>        
-    </div>
-    <div id="articles">
-        <article class="art">
-            <img src="assets/icons/briefcase.png" alt="">
-            
-            <span class="art-text">
-            <h5 class="art-title">10 Years in business</h5>
-            <p class="art-paraf">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat, dolor.</p>
-            </span>
-        </article>
-        <article class="art">
-            <img src="assets/icons/handshake.png" alt="">
+    </header>
 
-            <span class="art-text">
-            <h5 class="art-title">Trusted by autobuyers</h5>
-            <p class="art-paraf">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae, voluptates?</p>
-        </span>
-        </article>
-        <article class="art">
-            <img src="assets/icons/car.png" alt="">
-            
-            <span class="art-text">
-            <h5 class="art-title">Affordable auto prices</h5>
-            <p class="art-paraf">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic, consequuntur.</p>
-            </span>
-        </article>
-    </div>
-    <div id="ruben2">
-        <div id="leftbox2">
-            <span class="span-car">
-                <h4>Are you looking</h4>
-                <h3>TO BUY A CAR</h3>
-                <p class="p-car">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, neque?</p>
-                <button class="btn3"><span id="btn3-span">SEARCH YOUR CAR</button></span>
-            </span>
+    <nav id="sidebar" class="sidebar">
+        <h3>Menú</h3>
+        <ul class="menu_h">
+            <li class="current"><a href="#">Inicio</a></li>
+            <li><a href="./paginas/catalogo.html">Catálogo</a></li>
+            <li><a href="./paginas/tienda.html">Accesorios</a></li>
+            <li><a href="/tarjetas">Marcas</a></li>
+            <li><a href="ruben.html">Sobre nosotros</a></li>
+            <li><a href="./paginas/contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <main class = "main-content">
+        <div class="carrusel-container">
+            <div class="carrusel">
+                <div class="slide active">
+                    <img src= "assets/img/cars/Fiat Cronos 3.jpg" alt ="Imagen 1">
+                </div>
+                <div class="slide">
+                    <img src="assets/img/cars/filename.jpg" alt="Imagen 2">
+                </div>
+                <div class="slide">
+                    <img src="assets/img/cars/filename2.jpg" alt="Imagen 3">
+                </div>
+
+                <button class="arrow left">&#10094;</button>
+                <button class="arrow right">&#10095;</button>
+            </div>
         </div>
-        <div id="rightbox2">
-            <span class="span-car">
-            <h4>Do you want to</h4>
-            <h3>SELL A CAR?</h3>
-            <p class="p-car">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, soluta?</p>
-            <button class="btn3"><span id="btn3-span">LET US KNOW</span></button>
-            </span>
+    </main> 
+
+    <footer class="all">
+        <div class="container">
+            <div class="left_f">
+                <a href="https://www.instagram.com" target="_blank" >
+                    <img src="assets/img/footers/Instagram.png" alt="Botón: Enlace a Instagram"/>
+                </a>
+                <a href="https://www.twitter.com" target="_blank" >
+                    <img src="assets/img/footers/x.png" alt="Botón: Enlace a X (Twitter)"/>
+                </a>
+                <a href="https://www.youtube.com" target="_blank" >
+                    <img class="yt" src="assets/img/footers/youtube.png" alt="Botón: Enlace a YouTube"/>
+                </a>
+            </div>
+    
+            <div class="center_f">
+                <a href="/Privacidad">Políticas de privacidad</a>
+                <a href="/Condiciones">Términos y condiciones</a>
+                <a href="/Contacto">Contacto</a>
+                <p>&copy; 2025 ZURITA MOTORS</ZURITA-MOTORS>.</p>
+            </div>
+    
+            <div class="right_f">
+                <a href="https://www.googleplay.com" target="_blank" >
+                    <img class="google_play" src="assets/img/footers/google_play.png" alt="Botón: Descargar en Google Play"/>
+                </a>
+                <a href="https://www.appstore.com" target="_blank" >
+                    <img class="apple_store" src="assets/img/footers/apple_store.png" alt="Botón: Descargar en App Store"/>
+                </a>
+            </div>
         </div>
-    </div>
+    </footer>
+    <script src="assets\script\home.js"></script>
+    <script src="assets\script\header.js"></script>
 </body>
 </html>
