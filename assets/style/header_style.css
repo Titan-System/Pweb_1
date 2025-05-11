@@ -1,0 +1,218 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Hind';
+    src: url('../fonts/Hind-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Hind';
+    src: url('../fonts/Hind-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Hind';
+    src: url('../fonts/Hind-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Hind';
+    src: url('../fonts/Hind-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+:root {
+    --slide-transform: 0;
+    --transition: transform 1s;
+    --minRange: 0%;
+    --maxRange: 100%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+body {
+    font-family: "Hind", sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header-top_h {
+    background-color: #d01818;
+    color: white;
+    display: flex;
+    align-items: center;
+    position: relative; 
+    width: 100%; 
+    z-index: 1000; 
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 2px 10px;
+    height: 80px;
+}
+.desplegable_h {
+    background-color: transparent;
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+    color: white;
+    transition: all 0.3s;
+}
+.desplegable_h:hover {
+    transform: scale(1.2);
+}
+
+
+.logo_h{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo_h  h1{
+    font-family: "Poppins", sans-serif;
+    font-size: 30px;
+    transition: transform 0.3s;
+    font-weight: 600;
+    color: white;
+    text-transform: uppercase;
+    line-height: 1;
+}
+.logo_h:hover h1 {
+    transform: scale(1.05);
+}
+.logo_h svg{
+    width: 60px;
+    height: 60px;
+}
+.logo_h span{
+    font-size: 14px;
+    font-weight: 500;
+    display: block;
+    letter-spacing: 9px;
+}
+
+.sidebar {
+    position: fixed;  
+    top: 80px;  
+    left: 0;
+    width: 250px;  
+    height: 0;  
+    overflow: hidden;  
+    background-color: #d01818;
+    transition: height 0.3s ease;  
+    padding: 0;
+    color: #fff;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    z-index: 999;  
+}
+
+.sidebar.open {
+    height: 100vh;  
+}
+
+.sidebar h3 {
+    font-family: "Poppins", sans-serif;
+    color: white;
+    font-weight: 600;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 30px; /* ← prueba aumentando esto si aún se ve mal */
+}
+
+.menu_h {
+    list-style: none;
+    font-family: "Hind", sans-serif;
+    font-weight: 400;
+}
+
+.menu_h li {
+    margin: 15px 0;
+    text-align:  center;
+}
+    
+.menu_h li a {
+    color: #fff;
+    display: inline-block; 
+    text-decoration:none;
+    font-size: 14px;
+    padding: 5px 12px;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+.menu_h li a:hover {
+    background-color: #00000089;  
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);   
+}
+.current a{
+    background-color: #00000089;  
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
+}
+    
+    
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 200px;
+    }
+    .menu_h li a {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .sidebar {
+        width: 100px;
+    }
+    .menu_h li a {
+        font-size: 12px;
+    }
+}

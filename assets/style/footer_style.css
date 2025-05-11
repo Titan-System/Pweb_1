@@ -1,0 +1,58 @@
+footer {
+    height: 70px;
+    background-color: #d01818;
+}
+
+footer .container{
+    height: 100%;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.left_f {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.left_f a {
+    display: flex;
+}
+
+.left_f img {
+    width: 25px;  
+    height: auto;
+}
+
+.center_f {
+    text-align: center;
+}
+
+.center_f a  {
+    font-size: 15px;
+    margin-right: 10px;
+    color: white;
+}
+.center_f p  {
+    font-size: 12px;
+    margin-right: 10px;
+    color: rgb(255, 255, 255);
+}
+
+.right_f {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.right_f a{
+    display: flex
+}
+.google_play {
+    width: auto;
+    height: 30px; 
+}
+
+.apple_store {
+    width: auto;
+    height: 30px;
+}

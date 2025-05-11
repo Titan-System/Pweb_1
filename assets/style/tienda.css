@@ -1,0 +1,101 @@
+
+
+.header {
+    text-align: center;
+    margin-top: 30px;
+    padding: 40px 20px;
+    background: #fff;
+}
+
+.header h2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 48px;
+    color: #222222;
+    font-weight: 300;
+}
+
+.header p {
+    margin-top: 10px;
+    font-family: "Hind", sans-serif;
+    font-size: 16px;
+    color: #888;
+}
+
+
+.productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 40px;
+}
+
+.producto {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.producto img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.producto h3 {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #2f2f2f;
+    margin: 5px 0;
+}
+
+.producto .categoria {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    color: #888;
+    font-size: 13px;
+}
+
+.precio {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.precio-descuento {
+    text-decoration: line-through;
+    color: red;
+    margin-right: 8px;
+}
+
+
+.especial {
+    border: 2px solid #f30707;
+}
+
+
+.cargar-mas {
+    text-align: center;
+    margin: 40px 0;
+    margin-bottom: 80px;
+}
+
+.cargar-mas button {
+    font-size: "Poppins", sans-serif;
+    background-color: #d01818;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cargar-mas button:hover {
+    background-color: #9c0b0b;
+}
