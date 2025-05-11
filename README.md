@@ -1,6 +1,6 @@
 # Programación Web 1
 
-(Descripción del proyecto) Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus esse perspiciatis sit itaque distinctio, neque architecto ex ad maxime earum.
+Tomando como base un diseño de internet, nos dividimos las diferentes secciones a maquetar para luego integrarlas en unico sitio
 
 [Visitar Web](https://google.com)
 
