@@ -1,1 +1,8 @@
-Secciones hechas por cada integrante del grupo antes de integrarlas al proyecto
+Secciones hechas por cada integrante del grupo
+
+Ignacio Mateos: "Contacto"
+Mariana Guitian: "Marcas"
+Santino Rosas: "Accesorios"
+Erik Medina: "Catalogo"
+Enzo Blomberg: "Home"
+Ruben Zurita: "About"
