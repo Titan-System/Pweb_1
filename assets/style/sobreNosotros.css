@@ -1,0 +1,125 @@
+body{
+    padding: 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Poppins', sans-serif;
+    color: #222222;
+}
+.primary-container{
+    width: 80%;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+}
+.leftbox{
+    width: 50%;
+    margin: 80px 0;
+}
+.info-title-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 50px;
+}
+.info-title{
+    color: #222222;
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 1;
+}
+.info.subtitle{
+    font-size: 16px;
+    color: #888888;
+}
+.section-decoration{
+    width: 40px;
+    height: 7px;
+    margin-top: 15px;
+    border-top: 2px solid #d01818;
+    position: relative;
+    &::before,
+    &::after{
+        content: '';
+        position: absolute;
+        width: 90%;
+        height: 100%;
+        border-bottom: 2px solid #d01818;
+    }
+    &:before {right: -55%;}
+    &:after {left: -55%;}
+}
+.info-aboutUs-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.info-pretitle{
+    font-size: 16px;
+    color: #888888;
+}
+.title-aboutUs{
+    color: #222222;
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 1;
+}
+.text-aboutUs{
+    color:#000;
+    font-size: 16px;
+}
+.info-buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+.btn1{
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    background-color: #d01818;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 0 20px;
+    height: 50px;
+    cursor: pointer;
+}
+.btn2{
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    background-color: #000000;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 0 20px;
+    height: 50px;
+    cursor: pointer;
+}
+.btn1:hover{
+    color: #d01818;
+    background-color: #fff;
+    border:2px solid #d01818;
+}
+.btn2:hover{
+    color:#000;
+    background-color: #fff;
+    border: solid 2px #000;
+}
+.divisor{
+    background-color: #888;
+    height: 2px;
+    width: 80%;
+    margin: 40px auto;
+}
+.rightbox{
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+}
