@@ -2,6 +2,8 @@
 
 (Descripción del proyecto) Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus esse perspiciatis sit itaque distinctio, neque architecto ex ad maxime earum.
 
+[Visitar Web](https://google.com)
+
 ## Integrantes
 
 - Enzo Blomberg
