@@ -2,7 +2,7 @@
 
 Tomando como base un diseño de internet, nos dividimos las diferentes secciones a maquetar para luego integrarlas en unico sitio
 
-[Visitar Web](https://google.com)
+[Visitar Web](https://titan-system.github.io/Pweb_1/)
 
 ## Integrantes
 
