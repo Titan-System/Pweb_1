@@ -123,3 +123,129 @@ h1,h2,h3,h4,h5,h6{
     align-items: center;
     justify-content: center;
 }
+.rb-img{
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+.secondary-container{
+    width: 80%;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+}
+.articles-box{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+}
+.info-articles{
+    color: #444444;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 50px 25px;
+    gap: 20px;
+    box-shadow: 0px 3px 15px 2px rgba(0,0,0,0.15);
+    transition: all 0.3s ease;
+    margin-bottom: 100px;
+}
+.info-articles:hover{
+    color: white;
+    background-color: #d01818;
+    transition: all 0.3s ease;
+    h3{
+        color:#fff;
+    }
+}
+.tertiary-container{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+}
+.sell-box{
+    width: 50%;
+    height: 40vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;    
+    background-image:  url("../img/info/4005.jpg");
+}
+.buy-box{
+    width: 50%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;    
+    background-image:  url("../img/info/4006.jpg");
+}
+.sell-box-overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 44, 44, 0.25);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.buy-box-overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(200, 200, 200, 0.25);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.sell-title{
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    color: #fff;
+    text-shadow: 1px 1px 1px #d01818;
+}
+.buy-title{
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000000;
+}
+.sell-text{
+    color: #fff;
+    text-shadow: 1px 1px 1px #d01818;
+}
+.buy-text{
+    color:#fff;
+    text-shadow: 1px 1px 1px #000;
+}
+.btn3{
+  color: #000000;
+  background-color: #ffffff50;
+  border: 2px solid #d01818;
+  border-radius: 0px;
+  padding: 10px 20px;
+  display: inline-block;
+  font-family: 'Poppins',sans-serif;
+  font-size: 14px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  box-shadow: inset 0 0 0 0 #d01818;
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
+  margin: 20px;
+}
+.btn3:hover{
+  box-shadow: inset 400px 0 0 0 #d01818;
+  color: #fff;
+}
