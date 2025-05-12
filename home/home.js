@@ -36,5 +36,8 @@ document.addEventListener("DOMContentLoaded", () => {
       clearInterval(interval);
       interval = setInterval(nextSlide, intervalTime);
     }
+    document.getElementById("subscribeBtn").addEventListener("click", () => {
+        alert("Usted ya está suscrito, revise su mail, gracias!");
+    });
   });
   
