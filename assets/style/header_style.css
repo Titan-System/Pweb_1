@@ -83,11 +83,17 @@ body {
     color: white;
     display: flex;
     align-items: center;
-    position: relative; 
+    position: sticky;
+    top:-80px;
     width: 100%; 
     z-index: 1000; 
     box-shadow: rgba(0, 0, 0, 0.5) 0px 2px 10px;
     height: 80px;
+    transition: top 0.3s;
+    transition-delay: .3s;
+}
+.header-top_h.open{
+    top: 0;
 }
 .desplegable_h {
     background-color: transparent;
@@ -147,7 +153,7 @@ body {
     transition: height 0.3s ease;  
     padding: 0;
     color: #fff;
-    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+     box-shadow: 2px 3px 5px rgba(0,0,0,0.4);
     z-index: 999;  
 }
 
