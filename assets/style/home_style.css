@@ -5,16 +5,32 @@
   align-items: center;
   background-color: white;
   overflow: hidden;
+  padding-top: 20px;
+}
+.container-principal {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
 }
 
+.carrusel-con-formulario {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    flex-basis: 65%;
+    flex-grow: 1;
+    flex-direction: column;
+}
 .carrusel-container {
-  position: relative;
-  width: 100%;
-  height: calc(100vh - 80px - 70px); /* ocupa toda la altura restante entre header y footer */
-  margin: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
 }
 
 .carrusel {
@@ -76,4 +92,217 @@
 
 .arrow:hover {
   background-color: rgba(0, 0, 0, 0.9);
+}
+.FormOpinion {
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.opinion {
+    padding: 30px;
+    border: 2px solid #d01818;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #f0f0f0;
+}
+
+.opinion h2 {
+    color: #d01818;
+    margin-bottom: 15px;
+    font-size: 2rem;
+    text-align: center;
+    background-color: #e0e0e0;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+.opinion p {
+    color: #1e1e1e;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.opinion .fila {
+    display: flex;
+    gap: 15px;
+}
+
+.opinion input[type="text"],
+.opinion input[type="tel"],
+.opinion input[type="email"] {
+    padding: 12px;
+    border: 1px solid #1d1d1d;
+    border-radius: 3px;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 1rem;
+    background-color: white;
+    color: #333;
+}
+
+.opinion button[type="submit"] {
+    background-color: #1d1d1d; 
+    color: white; 
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.opinion button[type="submit"]:hover {
+    background-color: #d01818;
+    color: white;
+}
+
+.derecha-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+    flex-basis: 30%;
+    min-width: 300px;
+    margin-bottom: 20px;
+}
+
+.cartel-rojo {
+    font-family: "Poppins", sans-serif;
+    background-color: #d01818;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.3);
+}
+
+.cartel-rojo h2 {
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
+    line-height: 1;
+    margin-bottom: 15px;
+    font-weight: bold;
+    text-shadow: 2px 2px #333;
+}
+
+.cartel-rojo p {
+  font-family: "Hind", sans-serif;
+    margin: 10px 0;
+    line-height: 1.2;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.cartel-rojo .destacado {
+    font-size: 2rem;
+    color: white;
+    text-shadow: 2px 2px #000;
+}
+
+.cartel-rojo .precio-tachado {
+    text-decoration: line-through;
+    color: #eee;
+    font-size: 1.2rem;
+}
+
+.buscar-sucursal {
+    background-color: #1d1d1d; 
+    color: white;
+    text-align: center;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.buscar-sucursal::after {
+    content: " 🔍"; 
+    margin-left: 10px;
+}
+
+.mapa {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 450px; 
+}
+
+.mapa iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+@media (max-width: 768px) {
+    .main-content {
+        flex-direction: column;
+    }
+
+    .container-principal {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .carrusel-con-formulario {
+        width: 95%;
+        flex-basis: auto;
+        flex-direction: column;
+    }
+
+    .carrusel-container {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 9;
+        margin-bottom: 15px;
+    }
+
+    .FormOpinion {
+        width: 100%;
+    }
+
+    .opinion {
+        padding: 20px;
+    }
+
+    .opinion h2 {
+        font-size: 1.8rem;
+    }
+
+    .opinion p {
+        font-size: 1rem;
+    }
+
+    .opinion .fila {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .derecha-container {
+        width: 95%;
+        flex-basis: auto;
+    }
+
+    .mapa {
+        height: 250px;
+        margin-top: 15px;
+    }
+
+    .cartel-rojo h2 {
+        font-size: 2.5rem;
+    }
+
+    .cartel-rojo p {
+        font-size: 1.3rem;
+    }
+
+    .cartel-rojo .destacado {
+        font-size: 1.6rem;
+    }
 }
