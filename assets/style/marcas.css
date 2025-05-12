@@ -1,0 +1,115 @@
+
+.seccion-fabricantes{
+    margin: 60px 0;
+    margin-top: 70px;
+}
+
+.seccion-fabricantes .container{
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto; 
+    display: flex;
+    gap: 20px;
+}
+
+.fabricantes{
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    gap: 5px;
+    align-items: flex-start;
+}
+.fabricantes__titulo{
+    font-size: 48px;
+    font-weight: 300;
+}
+.fabricantes__texto{
+    font-size: 16px;
+    font-weight: 400;
+    color: #888888;
+}
+.fabricantes__lista {
+    columns: 250px 3;
+    list-style: none;
+    margin: 40px 0;
+}
+.fabricantes__lista li{
+    margin: 10px 0;
+}
+
+.fabricantes__boton { 
+    color: white;
+    background-color: #d01818;
+    border: none;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 10px 15px; 
+    text-transform: uppercase; 
+    cursor: pointer;
+}
+
+
+.lista2 {
+    background-image: url("../img/backgrounds/car_rental_bg.jpg");
+    color: white;
+    padding: 40px;
+    width: 30%;
+    background-size: cover;
+    background-position: center bottom;
+}
+.lista2__titulo{
+    color: #d01818;
+    margin-bottom: 15px;
+}
+.lista2__titulo span{
+    color: white;
+    font-size: 14px;
+    display: block; 
+}
+
+
+.seccion-comentarios{
+    margin: 50px 0; 
+    margin-bottom: 70px;
+    padding-top: 100px; 
+    background-image: url(../img/backgrounds/bg-6.jpg);
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: center bottom 70px;
+}
+
+.seccion-comentarios .container{
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.comentario{
+    width: 550px;
+    padding: 60px; 
+    padding-top: 0;
+    background-color: #f4f4f4; 
+    background-image: url(../img/backgrounds/quotes.png);
+    background-repeat: no-repeat; 
+    background-position: right 30px top 30px; 
+    box-shadow: 0px 3px 15px 2px rgba(0,0,0,0.15); 
+}
+
+.comentario__imagen{
+    width: 80px;
+    height: auto;
+    margin-top: -30px;  
+    margin-bottom: 30px;  
+}
+
+.comentario__autor{
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.comentario__texto{
+    font-size: 15px;
+}
