@@ -239,3 +239,70 @@
     height: 100%;
     border: none;
 }
+
+@media (max-width: 768px) {
+    .main-content {
+        flex-direction: column;
+    }
+
+    .container-principal {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .carrusel-con-formulario {
+        width: 95%;
+        flex-basis: auto;
+        flex-direction: column;
+    }
+
+    .carrusel-container {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 9;
+        margin-bottom: 15px;
+    }
+
+    .FormOpinion {
+        width: 100%;
+    }
+
+    .opinion {
+        padding: 20px;
+    }
+
+    .opinion h2 {
+        font-size: 1.8rem;
+    }
+
+    .opinion p {
+        font-size: 1rem;
+    }
+
+    .opinion .fila {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .derecha-container {
+        width: 95%;
+        flex-basis: auto;
+    }
+
+    .mapa {
+        height: 250px;
+        margin-top: 15px;
+    }
+
+    .cartel-rojo h2 {
+        font-size: 2.5rem;
+    }
+
+    .cartel-rojo p {
+        font-size: 1.3rem;
+    }
+
+    .cartel-rojo .destacado {
+        font-size: 1.6rem;
+    }
+}
