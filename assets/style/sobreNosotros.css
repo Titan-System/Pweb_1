@@ -124,7 +124,6 @@ h1,h2,h3,h4,h5,h6{
     align-items: center;
     justify-content: center;
 }
-<<<<<<< HEAD
 .rb-img{
     width: 100%;
     object-fit: contain;
@@ -166,6 +165,52 @@ h1,h2,h3,h4,h5,h6{
         color:#fff;
     }
 }
+
+.tabs-container{
+    background-color: #ffeaea;
+    margin: 0 auto 5em auto;
+    width: 50%;
+    max-width: 120em;
+    padding: 1em;
+}
+.tabs-container ul{
+    width: 100%;
+    /*background-color: lightblue;*/
+    list-style: none;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+.tabs-container .li{
+    /* background-color: lightgreen;*/
+    padding: 0.6em;
+    margin: 0 1em 0 0;
+    transition: all .5s ease;
+}
+.tabs-container .li.activo{
+    background-color: lightskyblue;
+    color: white;
+}
+.tabs-subcontainer{
+    min-height: 20vh;
+    /*background-color: lightsalmon;*/
+    position: relative;
+}
+.tabs-subcontainer .bloque{
+    /*background-color: lightseagreen;*/
+    margin: 1em;
+    padding: 1em;
+    position: absolute;
+    top:0;
+    opacity: 0;
+    transition: all .5s ease;
+}
+.tabs-subcontainer .bloque.activo{
+    opacity: 1;
+}
+
 .tertiary-container{
     width: 100%;
     margin: 0 auto;
@@ -251,9 +296,7 @@ h1,h2,h3,h4,h5,h6{
   box-shadow: inset 400px 0 0 0 #d01818;
   color: #fff;
 }
-=======
 .rightbox img{
     width:100%;
     height: auto;
 }
->>>>>>> 3152415e25932d99a8582901a4d6f74b88169f8e
