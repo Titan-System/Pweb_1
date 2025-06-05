@@ -157,6 +157,12 @@ h1,h2,h3,h4,h5,h6{
     transition: all 0.3s ease;
     margin-bottom: 100px;
 }
+.art-icon{
+    width: 80%;
+    height: 8em;
+
+
+}
 .info-articles:hover{
     color: white;
     background-color: #d01818;
@@ -167,7 +173,7 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .tabs-container{
-    background-color: #ffeaea;
+ /*    background-color: #ffeaea; */
     margin: 0 auto 5em auto;
     width: 50%;
     max-width: 120em;
@@ -177,26 +183,30 @@ h1,h2,h3,h4,h5,h6{
     width: 100%;
     /*background-color: lightblue;*/
     list-style: none;
-
     display: flex;
     flex-flow: row nowrap;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
 }
 .tabs-container .li{
     /* background-color: lightgreen;*/
-    padding: 0.6em;
+    font-size: 1.2em;
+    padding: 0.5em;
     margin: 0 1em 0 0;
-    transition: all .5s ease;
+    transition: all .5s ease; 
+    cursor: pointer;
 }
 .tabs-container .li.activo{
-    background-color: lightskyblue;
-    color: white;
+ /*    background-color: lightskyblue; */
+    color: #d01818;
+    border-bottom: 3px solid #d01818;
 }
 .tabs-subcontainer{
-    min-height: 20vh;
+    min-height: 35vh;
     /*background-color: lightsalmon;*/
     position: relative;
+    display: flex;
+    justify-content: center;
 }
 .tabs-subcontainer .bloque{
     /*background-color: lightseagreen;*/
@@ -209,6 +219,13 @@ h1,h2,h3,h4,h5,h6{
 }
 .tabs-subcontainer .bloque.activo{
     opacity: 1;
+}
+.bloque{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    min-height: 20vh;
 }
 
 .tertiary-container{
