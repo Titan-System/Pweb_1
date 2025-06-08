@@ -56,3 +56,14 @@ footer .container{
     width: auto;
     height: 30px;
 }
+
+@media (max-width: 767px) {
+    footer{
+        height: auto;
+        padding: 30px 0;
+    }
+    footer .container{
+        flex-direction: column;
+        gap: 20px;
+    }
+}
