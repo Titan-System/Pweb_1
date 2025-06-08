@@ -70,14 +70,14 @@ const getTransformValue = () => Number(rootStyles.getPropertyValue('--slide-tran
 const reordenarSlide = () => {
     const transformValue = getTransformValue();
     rootStyles.setProperty('--transition', 'none');
+    let gapValue = parseFloat(getComputedStyle(slider).getPropertyValue('gap'))
     if (slideCounter === sliderElements.length - 5) {
         slider.appendChild(slider.firstElementChild);
-        rootStyles.setProperty('--slide-transform', `${transformValue + sliderElements[slideCounter].scrollWidth + 25}px`
-    );
-    slideCounter--;
+        rootStyles.setProperty('--slide-transform', `${transformValue + sliderElements[slideCounter].scrollWidth + gapValue}px`);
+        slideCounter--;
     } else if (slideCounter === 0) {
         slider.prepend(slider.lastElementChild);
-        rootStyles.setProperty('--slide-transform', `${transformValue - sliderElements[slideCounter].scrollWidth - 25}px`);
+        rootStyles.setProperty('--slide-transform', `${transformValue - sliderElements[slideCounter].scrollWidth - gapValue}px`);
         slideCounter++;
     }
     isInTransition = false;
@@ -87,12 +87,13 @@ const moverSlide = direction => {
     if (isInTransition) return;
     const transformValue = getTransformValue();
     rootStyles.setProperty('--transition', 'transform .3s');
+    let gapValue = parseFloat(getComputedStyle(slider).getPropertyValue('gap'))
     isInTransition = true;
     if (direction === DIRECCION.LEFT) {
-        rootStyles.setProperty('--slide-transform', `${transformValue + sliderElements[slideCounter].scrollWidth + 25}px`);
+        rootStyles.setProperty('--slide-transform', `${transformValue + sliderElements[slideCounter].scrollWidth + gapValue}px`);
         slideCounter--;
     } else if (direction === DIRECCION.RIGHT) {
-        rootStyles.setProperty('--slide-transform',`${transformValue - sliderElements[slideCounter].scrollWidth - 25}px`);
+        rootStyles.setProperty('--slide-transform',`${transformValue - sliderElements[slideCounter].scrollWidth - gapValue}px`);
         slideCounter++;
     }
 };
@@ -139,6 +140,12 @@ document.addEventListener("input", (e)=>{
     else if(e.target == $maxInput)
         actualizarMaximo();
 })
+
+window.addEventListener('resize', () => {
+    let gapValue = parseFloat(getComputedStyle(slider).getPropertyValue('gap'))
+    rootStyles.setProperty('--slide-transform', `${0 - sliderElements[slideCounter].scrollWidth - gapValue}px`);
+    reordenarSlide();
+});
 
 slider.addEventListener('transitionend', reordenarSlide);
 
