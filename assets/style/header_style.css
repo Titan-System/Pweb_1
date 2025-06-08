@@ -204,21 +204,43 @@ body {
 }
     
     
-
-@media (max-width: 768px) {
-    .sidebar {
-        width: 200px;
+@media (max-width: 767px) {
+    body{
+        padding-top: 70px;
     }
-    .menu_h li a {
-        font-size: 14px;
+    .header-top_h{
+        height: 70px;
+        position: fixed;
+        top:0;
     }
-}
-
-@media (max-width: 480px) {
-    .sidebar {
-        width: 100px;
+    .desplegable_h{
+        font-size: 25px;;
     }
-    .menu_h li a {
-        font-size: 12px;
+    .logo_h{
+        gap:8px;
+        svg{
+            width: 40px;
+            height: 40px;
+        }
+        h1{
+            font-size: 23px;
+        }
+        span{
+            font-size: 8px;
+        }
+    }
+    .sidebar{
+        top: 70px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        h3{
+            margin: 0;
+        }
+    }
+    .sidebar.open {
+        height: calc(100vh - 70px);  
     }
 }
