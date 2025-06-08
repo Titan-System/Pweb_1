@@ -15,6 +15,7 @@ h1,h2,h3,h4,h5,h6{
     align-items: center;
     gap: 10px;
     margin-bottom: 50px;
+    text-align: center;
 }
 .seccion__titulo{
     color: #222222;
@@ -376,7 +377,7 @@ input[type="range"]{
     background-color: black;
     background-image: url('../img/backgrounds/servicios-bg.jpg');
     background-attachment: fixed;
-    margin-bottom: 150px;
+    margin-bottom: 180px;
     position: relative;
     .seccion__cabecera{
         z-index: 2;
@@ -476,7 +477,7 @@ input[type="range"]{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    padding: 80px 0;
+    padding: 30px 20px;
     gap: 50px;
 }
 .estadisticas{
@@ -506,4 +507,109 @@ input[type="range"]{
     margin-top: 10px;
     background-color: #bbbbbb;
     position: relative;
+}
+
+
+@media (max-width: 767px) {
+    .seccion__titulo{
+        font-size: 40px;
+    }
+    .seccion__servicios{
+        flex-direction: column;
+    }
+    .servicio{
+        margin-bottom: 0;
+        width: 100%;
+        max-width: 400px;
+    }
+    .servicio:last-child{
+        margin-bottom: -100px;
+    }
+    .seccion__estadisticas{
+        flex-wrap: wrap;
+        .estadisticas{
+            min-width: 157px;
+        }
+    }
+    .cars-panel{
+        flex-wrap: wrap;
+    }
+    .opcion{
+        width: 90px;
+        height: 80px;
+    }
+    .opcion__icono{
+        width: 60px;
+        height: 60px;
+    }
+    .filtros .container{
+        flex-wrap: wrap;
+    }
+    .filtros__columna{
+        flex-grow: 1;
+    }
+    .filtros__columna--ultima{
+        align-items: center;
+    }
+    .filtros__select{
+        width: 100%;
+        min-width: 150px;
+    }
+    .seccion__contenido{
+        &::before, &::after{
+            content: none;
+        }
+    }
+    .seccion__contenido--destacados{
+        width: 100%;
+        min-width: 280px;
+        max-width: 370px;
+        padding: 0 20px;
+    }
+    .destacados{
+        gap: 20px;
+    }
+    .tarjeta{
+        width: 100%;
+        flex-shrink: 0;
+        .tarjeta__imagen{
+            width: 100%;
+            flex-shrink: 0;
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1199px){
+    .filtros .container{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .seccion__contenido--destacados{
+        width: 710px;
+    }
+    .seccion__servicios{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .servicio{
+        margin-bottom: 0;
+        width: calc(50% - 20px);
+        max-width: 450px;
+    }
+    .servicio:nth-child(3n){
+        margin-bottom: -100px;
+    }
+    .servicio:last-child{
+        margin-bottom: -100px;
+    }
+    .filtros__columna{
+        width: calc(50% - 45px);
+        .filtros__select{
+            width: 100%;
+        }
+    }
+    .filtros__columna--ultima{
+        align-items: center;
+        flex-grow: 0;
+    }
 }
