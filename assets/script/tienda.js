@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
         alert("Acceso denegado: no hay productos nuevos disponibles.");
     });
 
-   
+  }); 
 document.addEventListener("DOMContentLoaded", () => {
     const countdownElement = document.getElementById("countdown");
 
