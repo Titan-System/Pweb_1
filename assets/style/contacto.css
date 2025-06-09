@@ -148,3 +148,23 @@
 .opinion button:hover {
     background-color: #a7a7a7;
 }
+
+@media (max-width: 767px) {
+    .todo .container{
+        flex-direction: column;
+    }
+    .FormOpinion{
+        width: 100%;
+        padding: 0;
+        padding-top: 70px;
+    }
+    .opinion{
+        padding: 40px 0;
+    }
+    .mapa{
+        width: 100%;
+        iframe{
+            height:300px
+        }
+    }
+}
