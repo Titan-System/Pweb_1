@@ -120,6 +120,8 @@ const actualizarBarra = () => {
     rootStyles.setProperty('--maxRange',  max + '%');
 }
 
+
+
 document.addEventListener('click', (e) => {
     if(e.target.classList.contains('opcion')) {
         if(e.target.classList.contains('opcion--seleccionada')) return
