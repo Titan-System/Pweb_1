@@ -113,3 +113,52 @@
 .comentario__texto{
     font-size: 15px;
 }
+
+@media (max-width: 767px) {
+    .fabricantes{
+        align-items: center;
+    }
+    .seccion-fabricantes{
+        margin-top: 60px;
+    }
+    .seccion-fabricantes .container{
+        flex-direction: column;
+        gap: 60px;
+    }
+    .fabricantes__titulo{
+        font-size: 40px;
+        text-align: center;
+    }
+    .fabricantes__texto{
+        text-align: center;
+    }
+    .fabricantes__lista{
+        columns: 120px 3;
+    }
+    .lista2{
+        width: 100%;
+    }
+    .seccion-comentarios .container{
+        flex-direction: column;
+        gap: 60px;
+        align-items: center;
+    }
+    .comentario{
+        padding: 30px;
+        padding-top: 0;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1199px){
+    .lista2{
+        width: 40%;
+        max-width: 350px;
+        flex-shrink: 0;
+    }
+    .fabricantes__titulo{
+        font-size: 45px;
+    }
+    .fabricantes__lista{
+        columns: 200px 3;
+    }
+}
