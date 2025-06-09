@@ -96,6 +96,11 @@ body {
     transition: top 0.3s;
     transition-delay: .3s;
 }
+.header-top_h .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 .header-top_h.open{
     top: 0;
 }
