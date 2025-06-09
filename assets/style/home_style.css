@@ -240,18 +240,14 @@
     border: none;
 }
 
-@media (max-width: 768px) {
-    .main-content {
-        flex-direction: column;
-    }
+@media (max-width: 767px) {
 
     .container-principal {
-        flex-direction: column;
-        align-items: center;
+        padding: 0 20px;
     }
 
     .carrusel-con-formulario {
-        width: 95%;
+        width: 100%;
         flex-basis: auto;
         flex-direction: column;
     }
@@ -261,10 +257,6 @@
         height: auto;
         aspect-ratio: 16 / 9;
         margin-bottom: 15px;
-    }
-
-    .FormOpinion {
-        width: 100%;
     }
 
     .opinion {
@@ -285,7 +277,7 @@
     }
 
     .derecha-container {
-        width: 95%;
+        width: 100%;
         flex-basis: auto;
     }
 
@@ -304,5 +296,23 @@
 
     .cartel-rojo .destacado {
         font-size: 1.6rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1199px){
+    .container-principal {
+        padding: 0 20px;
+    }
+    .cartel-rojo h2 {
+        font-size: 2rem;
+    }
+    .cartel-rojo p {
+        font-size: 1rem;
+    }
+    .cartel-rojo .destacado {
+        font-size: 1.3rem;
+    }
+    .derecha-container{
+        min-width: auto;
     }
 }
