@@ -99,3 +99,13 @@
 .cargar-mas button:hover {
     background-color: #9c0b0b;
 }
+
+@media (max-width: 767px) {
+    .header h2 {
+        font-size: 40px;
+    }
+    .productos{
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        padding: 20px;
+    }
+}
